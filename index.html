@@ -1,506 +1,699 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hockey</title>
     <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/58baa362ab.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/58baa362ab.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- tailwind and daisy -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <!-- custom css -->
     <style>
-        .manrope-font {
-            font-family: 'Manrope', sans-serif;
-        }
+      .manrope-font {
+        font-family: "Manrope", sans-serif;
+      }
     </style>
-</head>
-<body class="manrope-font">
+  </head>
+  <body class="manrope-font">
     <header class="container mx-auto">
-        <nav>
-            <div class="flex flex-row items-center  lg:justify-around my-6">
-                <div class="text-4xl text-[#131318] font-extrabold">
-                    <h2>Hockey<span class="text-red-600">’</span>s</h2>
-                </div>
-                <div class="space-x-4">
-                    <a class="text-red-500" href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Pages</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Contact</a>
-                </div>
-                <div class="space-x-4">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <button class="bg-[#FF4240] text-white py-4 px-6 rounded-lg"> Get Ticket  </button>
-                </div>
+      <nav>
+        <div class="lg:flex space-y-4` flex-row items-center lg:justify-around my-6">
+          <div class="text-4xl text-[#131318] font-extrabold">
+            <h2>Hockey<span class="text-red-600">’</span>s</h2>
+          </div>
+          <div class="space-x-4">
+            <a class="text-red-500" href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Pages</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="space-x-4">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <button class="bg-[#FF4240] text-white py-4 px-6 rounded-lg">
+              Get Ticket
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- carousel section -->
+      <section class="py-8">
+        <div class="carousel lg:h-[70vh]">
+          <div id="slide1" class="carousel-item relative lg:w-full">
+            <img src="Images/1.png" class=" lg:w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
             </div>
-        </nav>
-        <!-- carousel section -->
-        <section class="py-8">
-            <div class="carousel h-[70vh]">
-                <div id="slide1" class="carousel-item relative w-full">
-                  <img src="Images/1.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle">❮</a> 
-                    <a href="#slide2" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide2" class="carousel-item relative w-full">
-                  <img src="Images/2.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a> 
-                    <a href="#slide3" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide3" class="carousel-item relative w-full">
-                  <img src="Images/3.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a> 
-                    <a href="#slide4" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-              </div>
-        </section>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="Images/2.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="Images/3.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
     <main class="container mx-auto">
-        <!-- rounded progress section -->
-        <section class="my-20">
-            <div>
-                <div class="text-center">
-                    <h3 class="text-4xl text-[#131318] font-extrabold">Professional Hockeys Club</h3>
-                    <p class="text-[#131318] py-3">Rounded progress var is added to our service batter and we are promised to provide <br> our service well</p>
-                </div>
-               <div class="flex justify-center py-7">
-                <!-- first progress bar -->
-                    <div class="text-center space-x-8">
-                        <div class="radial-progress text-primary" style="--value:40;" role="progressbar">40%
-                        </div>
-                        <div>
-                            <h3 class="text-[#131318] text-xl font-bold">Prayer Facility</h3>
-                            <p class="w-[250px] mx-auto">Amet consectetur. Condimentum dignissim adipiscing .</p>
-                        </div>
-                    </div>
-                <!-- second progress bar -->
-                    <div class="text-center space-x-8">
-                        <div class="radial-progress text-primary" style="--value:40;" role="progressbar">40%
-                        </div>
-                        <div>
-                            <h3 class="text-[#131318] text-xl font-bold">Prayer Facility</h3>
-                            <p class="w-[250px] mx-auto">Amet consectetur. Condimentum dignissim adipiscing .</p>
-                        </div>
-                    </div>
-                <!-- third progress bar -->
-                    <div class="text-center space-x-8">
-                        <div class="radial-progress text-primary" style="--value:40;" role="progressbar">40%
-                        </div>
-                        <div>
-                            <h3 class="text-[#131318] text-xl font-bold">Prayer Facility</h3>
-                            <p class="w-[250px] mx-auto">Amet consectetur. Condimentum dignissim adipiscing .</p>
-                        </div>
-                    </div>
-                <!-- forth progress bar -->
-                    <div class="text-center space-x-8">
-                        <div class="radial-progress text-primary" style="--value:40;" role="progressbar">40%
-                        </div>
-                        <div>
-                            <h3 class="text-[#131318] text-xl font-bold">Prayer Facility</h3>
-                            <p class="w-[250px] mx-auto">Amet consectetur. Condimentum dignissim adipiscing .</p>
-                        </div>
-                    </div>
-               </div>
+      <!-- rounded progress section -->
+      <section class="my-20">
+        <div>
+          <div class="text-center">
+            <h3 class="text-4xl text-[#131318] font-extrabold">
+              Professional Hockeys Club
+            </h3>
+            <p class="text-[#131318] py-3">
+              Rounded progress var is added to our service batter and we are
+              promised to provide <br />
+              our service well
+            </p>
+          </div>
+          <div class="lg:flex justify-center py-7 space-y-4">
+            <!-- first progress bar -->
+            <div class="text-center space-x-8">
+              <div
+                class="radial-progress text-primary"
+                style="--value: 40"
+                role="progressbar"
+              >
+                <span class="text-black font-extrabold text-xl">40%</span>
+              </div>
+              <div>
+                <h3 class="text-[#131318] text-xl font-bold">
+                  Prayer Facility
+                </h3>
+                <p class="w-[250px] mx-auto">
+                  Amet consectetur. Condimentum dignissim adipiscing .
+                </p>
+              </div>
             </div>
-        </section>
-        <!-- program section -->
-        <section>
-            <div>
-                <div class="text-center">
-                    <h3 class=" text-2xl lg:text-4xl text-[#131318] font-extrabold">Program Sections</h3>
-                    <p class="lg:w-[700px] w-[300px] mx-auto text-[#131318] py-3">Rounded progress var is added to our service batter and we are promised to provide <br> our service well</p>
-                </div>
-                <!-- first program -->
-                <div class="lg:flex gap-6 justify-center py-6">
-                    <div class="relative">
-                        <img src="Images/2.png" alt="">
-                        <div class="absolute top-[30%] p-6">
-                            <h3 class="text-white text-3xl font-extrabold">Junior Program</h3>
-                            <p class="font-semibold text-white py-6">In this program we will teach you,
-                                <br> how to start playing hockey.stay humble learn more.</p>
-                             <button class="bg-[#FF4240] text-white py-3 px-12 rounded-lg"> Get Ticket  </button>   
-                        </div>
-                    </div>
-                    <!-- second program -->
-                    <div class="relative">
-                        <img src="Images/3.png" alt="">
-                        <div class="absolute top-[30%] p-6">
-                            <h3 class="text-white text-3xl font-extrabold">Junior Program</h3>
-                            <p class="font-semibold text-white py-6">In this program we will teach you,
-                                <br> how to start playing hockey.stay humble learn more.</p>
-                             <button class="bg-[#FF4240] text-white py-3 px-12 rounded-lg"> Get Ticket  </button>   
-                        </div>
-                    </div>
-                </div>
-                <!-- third program -->
-                <div class="flex justify-center">
-                    <div class="relative">
-                        <img src="Images/4.png" alt="">
-                        <div class="absolute top-[40%] p-6">
-                            <h3 class="text-white text-3xl font-extrabold">Junior Program</h3>
-                            <p class="font-semibold text-white py-6">In this program we will teach you,
-                                <br> how to start playing hockey.stay humble learn more.</p>
-                             <button class="bg-[#FF4240] text-white py-3 px-12 rounded-lg"> Get Ticket  </button>   
-                        </div>
-                    </div>
-                </div>
+            <!-- second progress bar -->
+            <div class="text-center space-x-8">
+              <div
+                class="radial-progress text-secondary"
+                style="--value: 60"
+                role="progressbar"
+              >
+                <span class="text-black font-extrabold text-xl">60%</span>
+              </div>
+              <div>
+                <h3 class="text-[#131318] text-xl font-bold">
+                    Experienced Coach
+                </h3>
+                <p class="w-[250px] mx-auto">
+                  Amet consectetur. Condimentum dignissim adipiscing .
+                </p>
+              </div>
             </div>
-        </section>
-        <!-- New product section -->
-        <section>
-            <div class="py-7">
-                <div class="text-center py-8">
-                    <h3 class=" text-2xl lg:text-4xl text-[#131318] font-extrabold">Program Sections</h3>
-                    <p class="lg:w-[700px] w-[300px] mx-auto text-[#131318] py-3">Rounded progress var is added to our service batter and we are promised to provide <br> our service well</p> <hr>
-                </div>
-                <!-- card container -->
-                <div class="flex justify-center items-center gap-7">
-                    <!-- first card content -->
-                    <div class="space-y-7">
-                        <!-- first card -->
-                        <div class="flex items-center gap-3 bg-slate-50 p-6 rounded-3xl">
-                    <div>
-                        <img src="Images/7.png" alt="">
-                    </div>
-                    <div>
-                        <div class="flex gap-1 items-center">
-                            <i class=" text-orange-500 fa-solid fa-star"></i>
-                            <p class="pr-3">5.0</p>
-                            <i class="fa-regular fa-eye"></i>
-                            <p class="pr-3">20</p>
-                            <i class="fa-regular fa-heart"></i>
-                            <p>200</p>
-                        </div>
-                        <div>
-                            <h3 class="py-2 text-[#131318] font-extrabold text-2xl">World Cup Flags Football</h3>
-                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <p class="text-[#FF4240] font-extrabold py-2 pr-3">Price - $22.00</p>
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <p>Delivery Fee : Free</p>
-                        </div>
-                    </div>
-                         </div>
-                        <!-- 2nd card -->
-                        <div class="flex items-center gap-3 bg-slate-50 p-6 rounded-3xl">
-                    <div>
-                        <img src="Images/9.png" alt="">
-                    </div>
-                    <div>
-                        <div class="flex gap-1 items-center">
-                            <i class=" text-orange-500 fa-solid fa-star"></i>
-                            <p class="pr-3">5.0</p>
-                            <i class="fa-regular fa-eye"></i>
-                            <p class="pr-3">20</p>
-                            <i class="fa-regular fa-heart"></i>
-                            <p>200</p>
-                        </div>
-                        <div>
-                            <h3 class="py-2 text-[#131318] font-extrabold text-2xl">World Cup Flags Football</h3>
-                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <p class="text-[#FF4240] font-extrabold py-2 pr-3">Price - $22.00</p>
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <p>Delivery Fee : Free</p>
-                        </div>
-                    </div>
-                         </div>
-                        <!-- 3rd card -->
-                        <div class="flex items-center gap-3 bg-slate-50 p-6 rounded-3xl">
-                    <div>
-                        <img src="Images/5.png" alt="">
-                    </div>
-                    <div>
-                        <div class="flex gap-1 items-center">
-                            <i class=" text-orange-500 fa-solid fa-star"></i>
-                            <p class="pr-3">5.0</p>
-                            <i class="fa-regular fa-eye"></i>
-                            <p class="pr-3">20</p>
-                            <i class="fa-regular fa-heart"></i>
-                            <p>200</p>
-                        </div>
-                        <div>
-                            <h3 class="py-2 text-[#131318] font-extrabold text-2xl">World Cup Flags Football</h3>
-                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <p class="text-[#FF4240] font-extrabold py-2 pr-3">Price - $22.00</p>
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <p>Delivery Fee : Free</p>
-                        </div>
-                    </div>
-                         </div>
-                    </div>
-                    <!-- second card content -->
-                    <div class="space-y-7">
-                        <!-- first card -->
-                        <div class="flex items-center gap-3 bg-slate-50 p-6 rounded-3xl">
-                      <div>
-                        <img src="Images/6.png" alt="">
-                     </div>
-                     <div>
-                        <div class="flex gap-1 items-center">
-                            <i class=" text-orange-500 fa-solid fa-star"></i>
-                            <p class="pr-3">5.0</p>
-                            <i class="fa-regular fa-eye"></i>
-                            <p class="pr-3">20</p>
-                            <i class="fa-regular fa-heart"></i>
-                            <p>200</p>
-                        </div>
-                        <div>
-                            <h3 class="py-2 text-[#131318] font-extrabold text-2xl">World Cup Flags Football</h3>
-                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <p class="text-[#FF4240] font-extrabold py-2 pr-3">Price - $22.00</p>
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <p>Delivery Fee : Free</p>
-                        </div>
-                    </div>
-                        </div>
-                        <!-- 2nd card -->
-                        <div class="flex items-center gap-3 bg-slate-50 p-6 rounded-3xl">
-                      <div>
-                        <img src="Images/8.png" alt="">
-                     </div>
-                     <div>
-                        <div class="flex gap-1 items-center">
-                            <i class=" text-orange-500 fa-solid fa-star"></i>
-                            <p class="pr-3">5.0</p>
-                            <i class="fa-regular fa-eye"></i>
-                            <p class="pr-3">20</p>
-                            <i class="fa-regular fa-heart"></i>
-                            <p>200</p>
-                        </div>
-                        <div>
-                            <h3 class="py-2 text-[#131318] font-extrabold text-2xl">World Cup Flags Football</h3>
-                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <p class="text-[#FF4240] font-extrabold py-2 pr-3">Price - $22.00</p>
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <p>Delivery Fee : Free</p>
-                        </div>
-                    </div>
-                        </div>
-                        <!-- 3rd card -->
-                        <div class="flex items-center gap-3 bg-slate-50 p-6 rounded-3xl">
-                      <div>
-                        <img src="Images/10.png" alt="">
-                     </div>
-                     <div>
-                        <div class="flex gap-1 items-center">
-                            <i class=" text-orange-500 fa-solid fa-star"></i>
-                            <p class="pr-3">5.0</p>
-                            <i class="fa-regular fa-eye"></i>
-                            <p class="pr-3">20</p>
-                            <i class="fa-regular fa-heart"></i>
-                            <p>200</p>
-                        </div>
-                        <div>
-                            <h3 class="py-2 text-[#131318] font-extrabold text-2xl">World Cup Flags Football</h3>
-                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <p class="text-[#FF4240] font-extrabold py-2 pr-3">Price - $22.00</p>
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <p>Delivery Fee : Free</p>
-                        </div>
-                    </div>
-                        </div>
-                    </div>
-                </div>
-                
+            <!-- third progress bar -->
+            <div class="text-center space-x-8">
+              <div
+                class="radial-progress text-primary"
+                style="--value: 70"
+                role="progressbar"
+              >
+                <span class="text-black font-extrabold text-xl">70%</span>
+              </div>
+              <div>
+                <h3 class="text-[#131318] text-xl font-bold">
+                    Senior Player
+                </h3>
+                <p class="w-[250px] mx-auto">
+                  Amet consectetur. Condimentum dignissim adipiscing .
+                </p>
+              </div>
             </div>
-        </section>
-        <!-- client-accordion section -->
-        <section>
-            <div class="text-center py-8">
-                <h3 class=" text-2xl lg:text-4xl text-[#131318] font-extrabold">Clients Question</h3>
-                <p class="lg:w-[700px] w-[300px] mx-auto text-[#131318] py-3">Rounded progress var is added to our service batter and we are promised to provide <br> our service well</p> <hr>
+            <!-- forth progress bar -->
+            <div class="text-center space-x-8">
+              <div
+                class="radial-progress text-danger"
+                style="--value: 100"
+                role="progressbar"
+              >
+                <span class="text-black font-extrabold text-xl">100%</span>
+              </div>
+              <div>
+                <h3 class="text-[#131318] text-xl font-bold">
+                    Training Ground
+                </h3>
+                <p class="w-[250px] mx-auto">
+                  Amet consectetur. Condimentum dignissim adipiscing .
+                </p>
+              </div>
             </div>
-            <div class="flex mx-auto items-center justify-center gap-12">
+          </div>
+        </div>
+      </section>
+      <!-- program section -->
+      <section>
+        <div>
+          <div class="text-center">
+            <h3 class="text-2xl lg:text-4xl text-[#131318] font-extrabold">
+              Program Sections
+            </h3>
+            <p class="lg:w-[700px] w-[300px] mx-auto text-[#131318] py-3">
+              Rounded progress var is added to our service batter and we are
+              promised to provide <br />
+              our service well
+            </p>
+          </div>
+          <!-- first program -->
+          <div class="lg:flex gap-6 justify-center py-6">
+            <div class="relative">
+              <img src="Images/2.png" alt="" />
+              <div class="absolute top-[30%] p-6">
+                <h3 class="text-white text-3xl font-extrabold">
+                  Junior Program
+                </h3>
+                <p class="font-semibold text-white py-6">
+                  In this program we will teach you, <br />
+                  how to start playing hockey.stay humble learn more.
+                </p>
+                <button class="bg-[#FF4240] text-white py-3 px-12 rounded-lg">
+                  Get Ticket
+                </button>
+              </div>
+            </div>
+            <!-- second program -->
+            <div class="relative">
+              <img src="Images/3.png" alt="" />
+              <div class="absolute top-[30%] p-6">
+                <h3 class="text-white text-3xl font-extrabold">
+                    Teenager Program
+                </h3>
+                <p class="font-semibold text-white py-6">
+                  In this program we will teach you, <br />
+                  how to start playing hockey.stay humble learn more.
+                </p>
+                <button class="bg-[#FF4240] text-white py-3 px-12 rounded-lg">
+                  Get Ticket
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- third program -->
+          <div class="flex justify-center">
+            <div class="relative">
+              <img src="Images/4.png" alt="" />
+              <div class="absolute top-[40%] p-6">
+                <h3 class="text-white text-3xl font-extrabold">
+                    Professional Program
+                </h3>
+                <p class="font-semibold text-white py-6">
+                  In this program we will teach you, <br />
+                  how to start playing hockey.stay humble learn more.
+                </p>
+                <button class="bg-[#FF4240] text-white py-3 px-12 rounded-lg">
+                  Get Ticket
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- New product section -->
+      <section>
+        <div class="py-7">
+          <div class="text-center py-8">
+            <h3 class="text-2xl lg:text-4xl text-[#131318] font-extrabold">
+                Our New Products
+            </h3>
+            <p class="lg:w-[700px] w-[300px] mx-auto text-[#131318] py-3">
+              Rounded progress var is added to our service batter and we are
+              promised to provide <br />
+              our service well
+            </p>
+            <hr />
+          </div>
+          <!-- card container -->
+          <div class="lg:flex justify-center items-center gap-7">
+            <!-- first card content -->
+            <div class="space-y-7">
+              <!-- first card -->
+              <div class="flex items-center gap-3 bg-slate-50 p-6 rounded-3xl">
                 <div>
-                    <img class="w-80" src="Images/11.png" alt="">
+                  <img src="Images/7.png" alt="" />
                 </div>
-                <!-- accordion section -->
-                <div class="w-[600px] my-7">
-                    <div class="collapse collapse-plus">
-                        <input type="radio" name="my-accordion-3" checked="checked" /> 
-                        <div class="collapse-title text-xl font-medium border-b-2">
-                            Our Equipment
+                <div>
+                  <div class="flex gap-1 items-center">
+                    <i class="text-orange-500 fa-solid fa-star"></i>
+                    <p class="pr-3">5.0</p>
+                    <i class="fa-regular fa-eye"></i>
+                    <p class="pr-3">20</p>
+                    <i class="fa-regular fa-heart"></i>
+                    <p>200</p>
+                  </div>
+                  <div>
+                    <h3 class="py-2 text-[#131318] font-extrabold text-2xl">
+                      World Cup Flags Football
+                    </h3>
+                    <p>
+                      Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <p class="text-[#FF4240] font-extrabold py-2 pr-3">
+                      Price - $22.00
+                    </p>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Delivery Fee : Free</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 2nd card -->
+              <div class="flex items-center gap-3 bg-slate-50 p-6 rounded-3xl">
+                <div>
+                  <img src="Images/9.png" alt="" />
+                </div>
+                <div>
+                  <div class="flex gap-1 items-center">
+                    <i class="text-orange-500 fa-solid fa-star"></i>
+                    <p class="pr-3">5.0</p>
+                    <i class="fa-regular fa-eye"></i>
+                    <p class="pr-3">20</p>
+                    <i class="fa-regular fa-heart"></i>
+                    <p>200</p>
+                  </div>
+                  <div>
+                    <h3 class="py-2 text-[#131318] font-extrabold text-2xl">
+                      World Cup Flags Football
+                    </h3>
+                    <p>
+                      Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <p class="text-[#FF4240] font-extrabold py-2 pr-3">
+                      Price - $22.00
+                    </p>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Delivery Fee : Free</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 3rd card -->
+              <div class="flex items-center gap-3 bg-slate-50 p-6 rounded-3xl">
+                <div>
+                  <img src="Images/5.png" alt="" />
+                </div>
+                <div>
+                  <div class="flex gap-1 items-center">
+                    <i class="text-orange-500 fa-solid fa-star"></i>
+                    <p class="pr-3">5.0</p>
+                    <i class="fa-regular fa-eye"></i>
+                    <p class="pr-3">20</p>
+                    <i class="fa-regular fa-heart"></i>
+                    <p>200</p>
+                  </div>
+                  <div>
+                    <h3 class="py-2 text-[#131318] font-extrabold text-2xl">
+                      World Cup Flags Football
+                    </h3>
+                    <p>
+                      Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <p class="text-[#FF4240] font-extrabold py-2 pr-3">
+                      Price - $22.00
+                    </p>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Delivery Fee : Free</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- second card content -->
+            <div class="space-y-7">
+              <!-- first card -->
+              <div class="flex items-center gap-3 bg-slate-50 p-6 rounded-3xl">
+                <div>
+                  <img src="Images/6.png" alt="" />
+                </div>
+                <div>
+                  <div class="flex gap-1 items-center">
+                    <i class="text-orange-500 fa-solid fa-star"></i>
+                    <p class="pr-3">5.0</p>
+                    <i class="fa-regular fa-eye"></i>
+                    <p class="pr-3">20</p>
+                    <i class="fa-regular fa-heart"></i>
+                    <p>200</p>
+                  </div>
+                  <div>
+                    <h3 class="py-2 text-[#131318] font-extrabold text-2xl">
+                      World Cup Flags Football
+                    </h3>
+                    <p>
+                      Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <p class="text-[#FF4240] font-extrabold py-2 pr-3">
+                      Price - $22.00
+                    </p>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Delivery Fee : Free</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 2nd card -->
+              <div class="flex items-center gap-3 bg-slate-50 p-6 rounded-3xl">
+                <div>
+                  <img src="Images/8.png" alt="" />
+                </div>
+                <div>
+                  <div class="flex gap-1 items-center">
+                    <i class="text-orange-500 fa-solid fa-star"></i>
+                    <p class="pr-3">5.0</p>
+                    <i class="fa-regular fa-eye"></i>
+                    <p class="pr-3">20</p>
+                    <i class="fa-regular fa-heart"></i>
+                    <p>200</p>
+                  </div>
+                  <div>
+                    <h3 class="py-2 text-[#131318] font-extrabold text-2xl">
+                      World Cup Flags Football
+                    </h3>
+                    <p>
+                      Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <p class="text-[#FF4240] font-extrabold py-2 pr-3">
+                      Price - $22.00
+                    </p>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Delivery Fee : Free</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 3rd card -->
+              <div class="flex items-center gap-3 bg-slate-50 p-6 rounded-3xl">
+                <div>
+                  <img src="Images/10.png" alt="" />
+                </div>
+                <div>
+                  <div class="flex gap-1 items-center">
+                    <i class="text-orange-500 fa-solid fa-star"></i>
+                    <p class="pr-3">5.0</p>
+                    <i class="fa-regular fa-eye"></i>
+                    <p class="pr-3">20</p>
+                    <i class="fa-regular fa-heart"></i>
+                    <p>200</p>
+                  </div>
+                  <div>
+                    <h3 class="py-2 text-[#131318] font-extrabold text-2xl">
+                      World Cup Flags Football
+                    </h3>
+                    <p>
+                      Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <p class="text-[#FF4240] font-extrabold py-2 pr-3">
+                      Price - $22.00
+                    </p>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Delivery Fee : Free</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- client-accordion section -->
+      <section>
+        <div class="text-center py-8">
+          <h3 class="text-2xl lg:text-4xl text-[#131318] font-extrabold">
+            Clients Question
+          </h3>
+          <p class="lg:w-[700px] w-[300px] mx-auto text-[#131318] py-3">
+            Rounded progress var is added to our service batter and we are
+            promised to provide <br />
+            our service well
+          </p>
+          <hr />
+        </div>
+        <div class="lg:flex mx-auto items-center justify-center gap-12">
+          <div>
+            <img class="w-80 mx-auto" src="Images/11.png" alt="" />
+          </div>
+          <!-- accordion section -->
+          <div class="lg:w-[600px] ml-8 my-7">
+            <div class="collapse collapse-plus">
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div class="collapse-title text-xl font-medium border-b-2">
+                Our Equipment
+              </div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium border-b-2">
+                Hockey Training
+              </div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium border-b-2">
+                Private Lessons
+              </div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium border-b-2">
+                PSki Touring
+              </div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium border-b-2">
+                Booking
+              </div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium border-b-2">
+                Pricingss
+              </div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- get in touch section -->
+      <section class="">
+          <div class="text-center py-8">
+            <h3 class="text-2xl lg:text-4xl text-[#131318] font-extrabold">
+              Get In Touch
+            </h3>
+            <p class="lg:w-[700px] w-[300px] mx-auto text-[#131318] py-3">
+              Rounded progress var is added to our service batter and we are
+              promised to provide <br />
+              our service well
+            </p>
+            <hr />
+          </div>
+          <div class="lg:flex  justify-center items-center"><div>
+              <!-- first touch -->
+              <div class="py-9 pr-28 pl-3 bg-[#bced6d1a]">
+                <i class="fa-solid fa-phone text-4xl text-green-500"></i>
+                <p class="pt-4 text-[ #131318]">
+                  Phone Number : <br />
+                  <span class="font-extrabold text-[#131318]"
+                    >(+62) 123-321-543</span
+                  >
+                </p>
+              </div>
+              <!-- 2nd touch -->
+              <div class="py-9 pr-28 pl-8 bg-[#fddd5f1a] my-4">
+                <i class="fa-solid fa-phone text-4xl text-green-500"></i>
+                <p class="pt-4 text-[ #131318]">
+                  Phone Number : <br />
+                  <span class="font-extrabold text-[#131318]"
+                    >(+62) 123-321-543</span>
+                </p>
+              </div>
+              <!-- 3rd touch -->
+              <div class="py-9 pr-28 pl-8 bg-[#E3F2FD]">
+                <i class="fa-solid fa-phone text-4xl text-green-500"></i>
+                <p class="pt-4 text-[ #131318]">
+                  Phone Number : <br />
+                  <span class="font-extrabold text-[#131318]"
+                    >(+62) 123-321-543</span>
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                  <div class="card shrink-0 w-full max-w-sm bg-base-100">
+                    <form class="card-body">
+                        <!-- name subject -->
+                      <div class="flex gap-3">
+                        <div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Email</span>
+                            </label>
+                            <input
+                              type="email"
+                              placeholder="email"
+                              class="input input-bordered"
+                              required
+                            />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Password</span>
+                            </label>
+                            <input
+                              type="password"
+                              placeholder="password"
+                              class="input input-bordered"
+                              required
+                            />
+                            <label class="label">
+                              <a href="#" class="label-text-alt link link-hover"
+                                >Forgot password?</a
+                              >
+                            </label>
+                          </div>
                         </div>
-                        <div class="collapse-content"> 
-                          <p>hello</p>
+                        <!-- email and number -->
+                        <div>
+                            <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text">Email</span>
+                                </label>
+                                <input
+                                  type="email"
+                                  placeholder="email"
+                                  class="input input-bordered"
+                                  required
+                                />
+                              </div>
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text">Password</span>
+                                </label>
+                                <input
+                                  type="password"
+                                  placeholder="password"
+                                  class="input input-bordered"
+                                  required
+                                />
+                            </div>
                         </div>
-                      </div>
-                      <div class="collapse collapse-plus">
-                        <input type="radio" name="my-accordion-3" /> 
-                        <div class="collapse-title text-xl font-medium border-b-2">
-                            Hockey Training
-                        </div>
-                        <div class="collapse-content"> 
-                          <p>hello</p>
-                        </div>
-                      </div>
-                      <div class="collapse collapse-plus">
-                        <input type="radio" name="my-accordion-3" /> 
-                        <div class="collapse-title text-xl font-medium border-b-2">
-                            Private Lessons
-                        </div>
-                        <div class="collapse-content"> 
-                          <p>hello</p>
-                        </div>
-                      </div>
-                      <div class="collapse collapse-plus">
-                        <input type="radio" name="my-accordion-3" /> 
-                        <div class="collapse-title text-xl font-medium border-b-2">
-                            PSki Touring
-                        </div>
-                        <div class="collapse-content"> 
-                          <p>hello</p>
-                        </div>
-                      </div>
-                      <div class="collapse collapse-plus">
-                        <input type="radio" name="my-accordion-3" /> 
-                        <div class="collapse-title text-xl font-medium border-b-2">
-                            Booking
-                        </div>
-                        <div class="collapse-content"> 
-                          <p>hello</p>
-                        </div>
-                      </div>
-                      <div class="collapse collapse-plus">
-                        <input type="radio" name="my-accordion-3" /> 
-                        <div class="collapse-title text-xl font-medium border-b-2">
-                            Pricingss
-                        </div>
-                        <div class="collapse-content"> 
-                          <p>hello</p>
-                        </div>
-                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+                <div class="form-control ml-20">
+                 <button class="btn bg-[#FF4240] text-white">Login</button>
                 </div>
             </div>
-        </section>
-        <!-- get in touch section -->
-        <section class="">
-           <div>
-                <div class="text-center py-8">
-                    <h3 class=" text-2xl lg:text-4xl text-[#131318] font-extrabold">Get In Touch</h3>
-                    <p class="lg:w-[700px] w-[300px] mx-auto text-[#131318] py-3">Rounded progress var is added to our service batter and we are promised to provide <br> our service well</p> <hr>
-                </div>
-                <div class="flex justify-center items-center gap-4">
-                    <div>
-                        <!-- first touch -->
-                        <div class=" py-9 pr-28 pl-8 bg-[#bced6d1a] my-5">
-                            <i class="fa-solid fa-phone text-4xl text-green-500"></i>
-                            <p class="pt-4 text-[ #131318]" >Phone Number : <br>
-                                <span class="font-extrabold text-[#131318]">(+62) 123-321-543</span></p>
-                        </div>
-                        <!-- 2nd touch -->
-                        <div class=" py-9 pr-28 pl-8 bg-[#fddd5f1a]">
-                            <i class="fa-solid fa-phone text-4xl text-green-500"></i>
-                            <p class="pt-4 text-[ #131318]" >Phone Number : <br>
-                                <span class="font-extrabold text-[#131318]">(+62) 123-321-543</span></p>
-                        </div>
-                        <!-- 3rd touch -->
-                        <div class=" py-9 pr-28 pl-8 bg-[#E3F2FD]">
-                            <i class="fa-solid fa-phone text-4xl text-green-500"></i>
-                            <p class="pt-4 text-[ #131318]" >Phone Number : <br>
-                                <span class="font-extrabold text-[#131318]">(+62) 123-321-543</span></p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="">
-                            <div class="hero-content flex-col lg:flex-row-reverse">
-                            <div class="card shrink-0 w-full max-w-sm bg-base-100">
-                                <form class="card-body">
-                                <div class="form-control">
-                                    <label class="label">
-                                    <span class="label-text">Email</span>
-                                    </label>
-                                    <input type="email" placeholder="email" class="input input-bordered" required />
-                                </div>
-                                <div class="form-control">
-                                    <label class="label">
-                                    <span class="label-text">Password</span>
-                                    </label>
-                                    <input type="password" placeholder="password" class="input input-bordered" required />
-                                    <label class="label">
-                                    <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
-                                    </label>
-                                </div>
-                                <div class="form-control mt-6">
-                                    <button class="btn btn-primary">Login</button>
-                                </div>
-                                </form>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-           </div>
-        </section>
-        <!-- social icon section -->
-        <section class="bg-[#13131808] my-8 text-center py-10">
-            <h3 class="font-extrabold text-[#131318] text-2xl">Social Media</h3>
-               <div class="space-x-4 pt-6">
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-github"></i>
-               </div>
-        </section>
+          </div>
+      </section>
+      <!-- social icon section -->
+      <section class="bg-[#13131808] my-8 text-center py-10">
+        <h3 class="font-extrabold text-[#131318] text-2xl">Social Media</h3>
+        <div class="space-x-4 pt-6">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </section>
     </main>
 
     <footer class="footer p-10 bg-[#131318] text-white">
-        <nav>
-          <header class="text-3xl font-bold">Get In Touch</header> 
-          <p>Dit amet consectetur.  Condimentum <br> adipiscing aliquam turpis placerat dolor. <br> Purus urna in sit nullam proin. </p>
-        </nav> 
-        <nav>
-          <header class="footer-title">Company</header> 
-          <a class="link link-hover">About us</a>
-          <a class="link link-hover">Contact</a>
-          <a class="link link-hover">Jobs</a>
-          <a class="link link-hover">Press kit</a>
-        </nav> 
-        <nav>
-          <header class="footer-title">Support</header> 
-          <a class="link link-hover">Terms of use</a>
-          <a class="link link-hover">Privacy policy</a>
-          <a class="link link-hover">Cookie policy</a>
-        </nav>
-        <nav>
-          <header class="footer-title">Services</header> 
-          <a class="link link-hover">Terms of use</a>
-          <a class="link link-hover">Privacy policy</a>
-          <a class="link link-hover">Cookie policy</a>
-        </nav>
-      </footer> 
-      <footer class="px-10 pb-10 bg-[#131318] space-y-4 text-white">
-        <aside class="flex items-center gap-2">
-            <i class="fa-solid fa-envelope text-red-600"></i>
-          <p class="text-sm">hockeys@support.com</p>
-        </aside> 
-        <aside class="flex items-center gap-2">
-            <i class="fa-solid fa-phone text-red-600"></i>
-          <p class="text-sm">(+62) 123-321-543</p>
-        </aside> <hr>
-      </footer>
-</body>
+      <nav>
+        <header class="text-3xl font-bold">Get In Touch</header>
+        <p>
+          Dit amet consectetur. Condimentum <br />
+          adipiscing aliquam turpis placerat dolor. <br />
+          Purus urna in sit nullam proin.
+        </p>
+      </nav>
+      <nav>
+        <header class="footer-title">Company</header>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <header class="footer-title">Support</header>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+      <nav>
+        <header class="footer-title">Services</header>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+    </footer>
+    <footer class="px-10 pb-10 bg-[#131318] space-y-4 text-white">
+      <aside class="flex items-center gap-2">
+        <i class="fa-solid fa-envelope text-red-600"></i>
+        <p class="text-sm">hockeys@support.com</p>
+      </aside>
+      <aside class="flex items-center gap-2">
+        <i class="fa-solid fa-phone text-red-600"></i>
+        <p class="text-sm">(+62) 123-321-543</p>
+      </aside>
+      <hr />
+    </footer>
+  </body>
 </html>
